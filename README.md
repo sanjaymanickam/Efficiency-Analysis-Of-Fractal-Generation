@@ -8,7 +8,7 @@ The Mandelbrot set is the set of complex numbers c for which the function fc(z) 
 To determine whether a value is in or out of the Mandelbrot Set , we loop through the formula Z<sub>n</sub>+1 = Z<sup>2</sup>n + C a certain number of times , these iteration number determines the color of the pixel whether it is black or white.<br /> 
 The above equation basically translates to this lim<sub>n->∞</sub>Z<sub>n</sub> ≤2
 
-**Work Flow**
+**Work Flow** <br />
  Assign space for the image and load it into the GPU.<br />  Launch Kernel.<br/>  Assign a grid and block size so that the image is divided across the CUDA cores.<br />  Copy the image back to the host.<br />  Write it into a bmp image<br />
 
 **Challenges in using CUDA**
