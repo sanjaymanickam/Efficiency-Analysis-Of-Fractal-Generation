@@ -5,7 +5,7 @@ Generated Mandelbrot sets in real time and produce the fractal images and invest
 The Mandelbrot set is the set of complex numbers c for which the function fc(z) = z<sup>2</sup> + c does not diverge when iterated from z = 0 , i.e for which the function f<sub>c</sub>(0),f<sub>c</sub>(f<sub>c</sub>(0)) etc. remain bounded in absolute value.
 
 **How it works**<br />
-To determine whether a value is in or out of the Mandelbrot Set , we loop through the formula Z<sub>n</sub>+1 = Z<sup>2</sup>n + C a certain number of times , these iteration number determines the color of the pixel whether it is black or white.<br /> 
+To determine whether a value is in or out of the Mandelbrot Set , we loop through the formula Z<sub>n</sub>+1 = Z<sup>2</sup><sub>n</sub> + C a certain number of times , these iteration number determines the color of the pixel whether it is black or white.<br /> 
 The above equation basically translates to this lim<sub>n->∞</sub>Z<sub>n</sub> ≤2
 
 **Work Flow** <br />
